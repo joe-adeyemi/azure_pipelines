@@ -1,0 +1,11 @@
+- task: ArtifactoryNuGet@2
+  inputs:
+    command: 'restore'
+    arguments: '$(Build.SourcesDirectory)\DigineuBackend.sln'
+    artifactoryService: 'JFrogServiceConnection'
+    targetResolveRepo: 'virtual-nuget'
+    solutionPath: '**/DigineuBackend.sln'    
+    collectBuildInfo: true
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
+    includeEnvVars: true
