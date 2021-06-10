@@ -2,8 +2,8 @@
   inputs:
     command: 'restore'
     arguments: '$(Build.SourcesDirectory)\DigineuBackend.sln'
-    artifactoryService: 'JFrogServiceConnection'
-    targetResolveRepo: 'virtual-nuget'
+    artifactoryService: 'JoeA Artifactory'
+    targetResolveRepo: 'nuget'
     solutionPath: '**/DigineuBackend.sln'    
     collectBuildInfo: true
     buildName: '$(Build.DefinitionName)'
